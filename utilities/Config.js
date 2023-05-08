@@ -1,13 +1,4 @@
 //@ts-check
-
-function stripUrl(url) {
-  if (url.includes('//')) {
-    const splitUrl = url.split('//');
-    return splitUrl[1];
-  }
-  return url;
-}
-
 export const Config = {
   site_name: '$STEVE',
   title: '$STEVE',

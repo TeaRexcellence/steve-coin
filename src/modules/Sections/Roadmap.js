@@ -31,7 +31,7 @@ const Roadmap = () => (
         <div className="Phases">
           <div className="Phase1 Phase">
             <Image
-              src="./img/Phase1.png"
+              src="./img/phase1.png"
               width={680}
               height={440}
               alt="Steve"
@@ -47,7 +47,7 @@ const Roadmap = () => (
 
           <div className="Phase2 Phase">
             <Image
-              src="./img/Phase2.png"
+              src="./img/phase2.png"
               width={680}
               height={440}
               alt="Steve"
@@ -63,7 +63,7 @@ const Roadmap = () => (
 
           <div className="Phase3 Phase">
             <Image
-              src="./img/Phase3.png"
+              src="./img/phase3.png"
               width={680}
               height={440}
               alt="Steve"
