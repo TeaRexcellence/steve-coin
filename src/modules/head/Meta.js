@@ -3,8 +3,8 @@
 import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { Config } from '../../../utils/Config';
-import { addTrailingSlash } from '../../../utils/Url';
+import { Config } from '../../../utilities/Config';
+import { addTrailingSlash } from '../../../utilities/Url';
 
 const Meta = (props) => {
   const router = useRouter();
