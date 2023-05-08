@@ -16,7 +16,7 @@ const SiteHeader = () => {
     <div className="InnerContainer">
     <header>
       <div className="nav-assets">
-        <Image src="/img/logo.png" width={210} height={129} alt="Steve" />
+        <Image src="./img/logo.png" width={210} height={129} alt="Steve" />
         <div className="HamburgerContainer" onClick={toggleMM}>
           <Hamburger/>
         </div>
