@@ -1,0 +1,849 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { 
+  scroll-behavior: smooth
+}
+* {
+  font-family: "Righteous", Sans-serif;
+  color:white;
+  scroll-behavior: smooth!important;;
+}
+
+.hamburger-icon{
+  fill: white;
+}
+
+body {
+  background-color: #0f0006;
+}
+
+.HamburgerContainer,
+.mobile-nav-container{
+  display:none;
+}
+
+.PrimaryContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.MainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.InnerContainer {
+  width: calc(100% - 40px);
+  max-width: 1240px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-nav-container {
+  width: 100%;
+}
+
+nav.desktop-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav.desktop-nav ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 760px;
+  width: 100%;
+}
+
+nav.desktop-nav a {
+  font-size: 1.375rem;
+}
+
+nav.desktop-nav a:hover {
+  opacity: 0.8;
+}
+
+nav.desktop-nav li.ChartBtn a,
+.HeroBtns a {
+  background: #fb514a;
+  border-color: #ffffff;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  border-top-left-radius: 455px;
+  border-top-right-radius: 455px;
+  border-bottom-right-radius: 455px;
+  border-bottom-left-radius: 455px;
+  font-size: 18px;
+  padding: 10px 25px;
+}
+
+nav.desktop-nav li.ChartBtn a:hover,
+.HeroBtns a:hover {
+  background: white;
+  color: #fb514a;
+  fill: #fb514a;
+}
+
+.HeroBtns a:hover svg {
+  fill: #fb514a;
+}
+
+.HeroTxt .HeroBtns > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HeroBtns svg {
+  fill: white;
+  max-width: 40px;
+  width: 100%;
+}
+
+.HeroBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Hero-PrimaryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div#menu {
+  margin-bottom: 30px;
+}
+
+/*HERO CSS*/
+.HeroTxt p:first-child {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 2em;
+}
+
+.HeroTxt h1 {
+  color: #FB514A;
+  font-size: 140px;
+  font-weight: 900;
+  line-height: 1.1em;
+}
+
+.HeroTxt p:nth-child(3) {
+  color: #FFFFFF;
+
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 2em;
+  margin-bottom: 0.6em;
+}
+
+.HeroTxt p:nth-child(4) {
+  color: #FB514A;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.HeroTxt {
+  max-width: 500px;
+}
+
+.HeroBtns a {
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  height: 50px;
+}
+
+a.circleBtn {
+  max-width: 50px;
+  padding: 0;
+  width: 50px;
+  min-width: 50px;
+}
+
+.HeroBtns {
+  margin-top: 40px;
+}
+
+a.circleBtn svg {
+  width: 30px;
+}
+
+a.circleBtn.twitter svg {
+  max-width: 25px;
+}
+
+/*ABOUT section*/
+.About-PrimaryContainer {
+  background: #FB514A;
+  border-radius: 20px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 460px;
+}
+.AboutImg {
+  width: 40%;
+  display: flex;
+  align-items: baseline;
+}
+
+.AboutTxt {
+  width: 60%;
+}
+
+.AboutTxt h2 {
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+}
+
+.AboutTxt p {
+  margin-bottom: 20px;
+  text-align: left;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+}
+
+
+.AboutTxt {
+  width: calc(60% - 40px);
+  margin-right: 40px;
+  padding: 10px;
+}
+
+
+
+.AboutImg img {
+  margin-top: auto;
+}
+
+
+/* Tokenomics */
+
+.TokenomicSplit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tokenomics-PrimaryContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Tokenomics-PrimaryContainer h2 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 2em;
+  letter-spacing: 2px;
+}
+
+.TokenAddress {
+  align-self: center;
+  text-align: center;
+  border: 1px solid red;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #FB514A;
+  margin: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 590px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.TokenAddress h3 {
+  color: #FB514A;
+  font-family: "Righteous", Sans-serif;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 2em;
+  letter-spacing: 0.07em;
+}
+
+.TokenAddress p {
+  font-size: 19px;
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.TokenSupplyBlock h3 {
+  text-align: center;
+  color: #FB514A;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.TokenSupplyBlock > p {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.TokenSupplyBlock .InnerBlock {
+  background-color: #FB514A;
+  margin: 18px 18px 18px 18px;
+  padding: 50px 20px 50px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.TokenSupplyBlock .InnerBlock p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 410px;
+}
+
+.TokenSupplyHeros .InnerBlock h4 {
+  text-align: center;
+
+  font-size: 23px;
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.TokenSupplyHeros .InnerBlock p {
+  text-align: center;
+  font-size: 29px;
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.DisplayBlocks .InnerBlock {
+  border: 1px solid #FB514A;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 10px 10px 10px 10px;
+  padding: 15px 15px 15px 15px; 
+  background: #FB514A;
+  border-radius: 20px;
+}
+
+.DisplayBlocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  position: relative;
+}
+
+.DisplayBlocks .InnerBlock {
+  width: calc(50% - 20px);
+}
+
+.DisplayBlocks .InnerBlock:last-child {
+  width: 100%;
+}
+
+.TokenSupplyImg {
+  display: flex;
+  justify-content: center;
+}
+
+.TokenSupplyImg img {
+  max-width: 350px;
+}
+.TokenAddress p {
+  word-break: break-word;
+  line-height: 1.5em;
+}
+
+
+/*ROADMAP*/
+
+.Phases ul {
+  display: list-item;
+  list-style-type: disc;
+}
+
+.Roadmap-PrimaryContainer{
+  width: 100%;
+}
+
+.RoadMapHeroTxt {
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.DividerContainer {
+  background: #0f0006;
+  fill: #F97D77;
+}
+
+.Roadmap-PrimaryContainer .DividerContainer:last-child {
+  transform: rotate(180deg);
+}
+
+.DividerContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+}
+.DividerContainer svg {
+  width: 100vw;
+}
+.DividerSection{
+  background: #F97D77;
+}
+
+.DividerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.InnerContainer h2 {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 2em;
+  letter-spacing: 2px;
+}
+
+.RoadMapHero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RoadMapHeroTxt {
+  border-radius: 20px;
+  background-color: #FB514A;
+  width: 60%;
+  border: 2px solid white;
+  margin: 18px -30px 18px 60px;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.DividerSection {
+  padding: 40px 0px 150px 0px;
+}
+
+.Phases {
+  display: flex;
+  justify-content: center;
+}
+
+.RoadMapHeroImg {
+  width: 25%;
+}
+
+.Phase {
+  text-align: left;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 30px;
+  word-spacing: 1.5px;
+  background: #FB514A;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.Phase img {
+  border-radius: 20px;
+}
+
+.Phases {
+  display: flex;
+}
+
+.Phase3 {
+  margin-right: 0px!important;
+}
+
+.Phase {
+  text-align: left;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 30px;
+  word-spacing: 1.5px;
+  background: #FB514A;
+  border-radius: 25px 25px 25px 25px;
+  width: calc(33.33% - 40px);
+  margin-right: 20px;
+  display: flex;
+  padding-top: 34px;
+  padding: 20px 45px;
+}
+
+.Phase img {
+  max-width: 95%;
+  align-self: center;
+}
+
+.Phase h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.RoadMapHero {
+  margin-bottom: 50px;
+}
+
+.Roadmap-PrimaryContainer .DividerContainer:last-child svg {
+  position: relative;
+  top: 2px;
+}
+
+/*HOW TO BUY*/
+.HTB-Block {
+  margin: 10px 10px 10px 10px;
+  background: #FB514A;
+  padding: 15px 25px 15px 25px;
+  border-radius: 20px;
+  width: calc(50% - 30px);
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.HTB-Block h3 {
+  text-align: left;
+  font-size: 23px;
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.HTB-Block {
+  width: calc(50% - 30px);
+}
+
+.HTB-Blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.HTB-Block {
+  width: calc(50% - 30px);
+  min-height: 230px;
+}
+
+.HTB-Block p {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+/*FOOTER*/
+footer.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer.footer .HeroBtns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer.footer .HeroBtns > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 90px;
+  border-top: 1px solid #fb514a;
+  margin-top: 20px;
+}
+
+footer.footer h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 2em;
+  letter-spacing: 1px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  .HeroTxt {
+    margin-top: 40px;
+  }
+  .HeroBtns {
+    flex-direction: column;
+  }
+  .HeroTxt .HeroBtns > div:last-child {
+    margin-top: 30px;
+  }
+  .HeroTxt h1{
+    font-size: 100px;
+  }
+  .HamburgerContainer,
+  .mobile-nav-container{
+    display:initial;
+  }
+
+  .desktop-nav-container{
+    display:none!important;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .nav-assets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .HamburgerContainer {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .mobile-nav-container, .mobile-nav-container ul {
+    width: 100%;
+  }
+
+  nav.mobile-nav li:first-child a{
+    border-top: 1px solid #fb514a;
+  }
+
+  nav.mobile-nav a {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #fb514a;
+    text-indent: 15px;
+  }
+
+  nav.mobile-nav {
+    margin-top: 12px;
+  }
+
+  /*HERO*/
+  .Hero-PrimaryContainer {
+    flex-direction: column;
+  }
+
+  .HeroTxt p, .HeroTxt h1 {
+    text-align: center;
+  }
+  .HeroTxt {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .HeroBtns{
+    max-width: 100%;
+  }
+
+  /*ABOUT*/
+  .About-PrimaryContainer {
+    margin-top: -20px;
+    flex-direction: column;
+  }
+
+  .AboutTxt {
+    width: 100%;
+    margin-right: 40px;
+    padding: 0px 43px;
+  }
+
+  .AboutImg {
+    order: 1;
+  }
+
+  .AboutTxt p {
+    line-height: 1.4em;
+    font-size: 17px;
+  }
+
+  /*Tokenomics*/
+  .TokenomicSplit {
+    flex-direction: column;
+  }
+  .TokenSupplyBlock .InnerBlock {
+    margin: 0;
+  }
+  .TokenSupplyBlock .InnerBlock p {
+    font-size: 20px;
+  }
+
+  .DisplayBlocks .InnerBlock {
+    width: 100%;
+  }
+  .TokenSupplyBlock .InnerBlock {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .DisplayBlocks {
+    margin-top: 15px;
+  }
+  .TokenAddress p {
+    font-size: 16px;
+  }
+  
+  /*RoadMap*/
+  
+  .RoadMapHero {
+    flex-direction: column;
+  }
+  .RoadMapHeroImg {
+    width: 60%;
+    margin-top: -80px;
+  }
+
+  .InnerContainer h2 {
+    z-index: 1;
+    position: relative;
+    text-shadow: 3px 3px black;
+  }
+  .RoadMapHeroTxt {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  /*HOW TO BUY*/
+  .Phases {
+    flex-direction: column;
+  }
+  .Phase {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .RoadMapHero {
+    margin-bottom: 35px;
+  }
+  .HTB-Blocks {
+    flex-direction: column;
+  }
+
+  .HTB-Block {
+    width: 100%;
+    margin: 14px 0px;
+  }
+
+  .InnerContainer h2 {
+    font-size: 50px;
+  }
+
+  /*Footer*/
+  footer.footer h2 {
+  font-size: 35px;
+  line-height: 1.5em;
+  margin-top: 100px;
+  }
+  .TokenSupplyBlock > p {
+    margin-bottom: 40px;
+  }
+  .TokenSupplyBlock .InnerBlock p {
+    max-width: 100%;
+  }
+  .Phase {
+    padding: 40px 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .TokenSupplyBlock > p {
+    font-size: 80vw;
+  }
+  .HeroTxt h1 {
+    font-size: 27vw;
+  }
+  .TokenSupplyImg img {
+    max-width: 280px;
+  }
+  .InnerContainer h2 {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  .DividerSection {
+    padding: 40px 0px 80px 0px;
+  }
+  .TokenSupplyBlock > p {
+    font-size: 7.5vw;
+  }
+  .HeroBtns a {
+    margin-right: 10px;
+  }
+  .HeroBtns >div:first-child a {
+    min-width: 130px;
+    font-size: 16px;
+  }
+  .DisplayBlocks .InnerBlock{
+    margin: 10px 2px;
+  }
+  .RoadMapHeroTxt {
+    font-size: 20px;
+  }
+}
