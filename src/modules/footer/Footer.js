@@ -15,7 +15,7 @@ const Footer = () => (
       <Link href="https://etherscan.io/token/0x54debe126da16a8fcaa67285d6830c3a7c6752fd#balances" target="_blank"> ETH SCAN </Link>
     </div>
     <div>
-      <Link className="circleBtn telegram"  href="https://t.me/SteveERC20Portal" target="_blank"> <Telegram/> </Link>
+      <Link className="circleBtn telegram"  href="https://t.me/SteveERC20" target="_blank"> <Telegram/> </Link>
       <Link className="circleBtn twitter" href="https://twitter.com/SteveSeagullEt" target="_blank"> <Twitter/> </Link>
     </div>
   </div>
