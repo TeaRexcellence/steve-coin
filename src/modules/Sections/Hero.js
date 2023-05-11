@@ -34,7 +34,7 @@ const Hero = () => (
           <div>
             <Link
               className="circleBtn telegram"
-              href="https://t.me/SteveERC20"
+              href="https://t.me/SteveERC20/"
               target="_blank"
             >
               {' '}
