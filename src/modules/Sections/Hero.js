@@ -54,7 +54,7 @@ const Hero = () => (
 
       <div className="HeroImg">
         <Image
-          src="./img/Steve-hero3.png"
+          src="/img/Steve-hero3.png"
           width={624}
           height={469}
           alt="Steve"
