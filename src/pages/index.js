@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
+import { Inter } from "next/font/google";
 import { PrimaryContainer } from '../Templates/Primary-Container';
 import { Meta } from '../modules/head/Meta';
 import { GetStaticProps } from 'next';
