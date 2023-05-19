@@ -42,7 +42,7 @@ const Tokenomics = () => (
           </div>
           <div className="TokenSupplyImg">
             <Image
-              src="./img/angry-steve.png"
+              src="/img/angry-steve.png"
               width={550}
               height={589}
               alt="Steve"

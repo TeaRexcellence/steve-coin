@@ -9,7 +9,7 @@ const About = () => (
     <div className="About-PrimaryContainer">
       <div className="AboutImg">
         <Image
-          src="./img/Steve-hero-1.png"
+          src="/img/Steve-hero-1.png"
           width={400}
           height={400}
           alt="Steve"
